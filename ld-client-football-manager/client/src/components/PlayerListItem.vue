@@ -18,7 +18,7 @@
           </option>
         </select>
         <div class="input-group-append">
-          <button class="btn btn-outline-primary" type="submit">Set Team</button>
+          <button class="btn btn-outline-primary" @click.prevent="setTeam" type="submit">Set Team</button>
         </div>
       </form>
     </td>

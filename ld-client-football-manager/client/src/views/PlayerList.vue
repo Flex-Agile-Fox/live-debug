@@ -12,7 +12,7 @@
     </thead>
     <tbody>
       <PlayerListItem
-        v-for="player in players"
+        v-for="(player, i) in players"
         :key="player.id"
         :player="player"
         :num="i+1"

@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import TeamDetail from '../views/TeamDetail.vue'
 
 Vue.use(VueRouter)
 
@@ -14,6 +15,11 @@ const routes = [
     path: '/players',
     name: 'Players',
     component: () => import(/* webpackChunkName: "player" */ '../views/PlayerList.vue')
+  },
+  {
+    path: '/teams',
+    name: 'Teams',
+    component: TeamDetail
   },
   {
     path: '/teams/:id',

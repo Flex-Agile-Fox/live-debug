@@ -51,8 +51,11 @@
 </template>
 
 <script>
+// import TeamCard from '../components/TeamCard.vue'
+
 export default {
   name: 'TeamDetail',
+  components: {},
   computed: {
     team () {
       return this.$store.state.team
