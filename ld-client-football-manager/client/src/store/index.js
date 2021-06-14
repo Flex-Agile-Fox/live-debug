@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import footballAPI from '../api'
+import footballAPI from '../api/footballApi'
 
 Vue.use(Vuex)
 
@@ -71,12 +71,10 @@ export default new Vuex.Store({
         })
     },
     setTeam (_, payload) {
-      return footballAPI
-        .patch('/players/' + payload.playerId, {
-          teamId: payload.teamId
-        })
+      return footballAPI.patch('/players/' + payload.playerId, {
+        teamId: payload.teamId
+      })
     }
   },
-  modules: {
-  }
+  modules: {}
 })

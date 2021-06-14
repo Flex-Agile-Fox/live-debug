@@ -8,6 +8,7 @@
         v-if="notif"
       />
     </main>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -23,9 +24,11 @@ export default {
     Headline,
     BaseNotification
   },
-  data() {
-    notif: {
-      return this.$store.state.notif
+  data () {
+    return {
+      notif: {
+        return: this.$store.state.notif
+      }
     }
   }
 }
