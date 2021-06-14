@@ -5,6 +5,6 @@ const userRoutes = require('./user')
 const songRoutes = require('./song')
 
 router.use('/', userRoutes)
-router.use('/songs', songRoutes)
+router.use('/', songRoutes)
 
 module.exports = router
