@@ -12,10 +12,10 @@
     </thead>
     <tbody>
       <PlayerListItem
-        v-for="player in players"
+        v-for="(player,num) in players"
         :key="player.id"
         :player="player"
-        :num="i+1"
+        :num="num"
       />
     </tbody>
   </table>

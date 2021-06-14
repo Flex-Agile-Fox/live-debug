@@ -1,6 +1,6 @@
 <template>
   <tr>
-    <th scope="row">{{num}}</th>
+    <th scope="row">{{num + 1}}</th>
     <td>{{player.name}}</td>
     <td>{{player.pos}}</td>
     <td>{{player.height}}</td>
