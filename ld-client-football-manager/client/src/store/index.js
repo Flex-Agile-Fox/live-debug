@@ -54,6 +54,7 @@ export default new Vuex.Store({
       footballAPI
         .get('/teams/' + payload.id)
         .then(({ data }) => {
+          console.log(data)
           context.commit('SET_TEAM', data)
         })
         .catch(err => {

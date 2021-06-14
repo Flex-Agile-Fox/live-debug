@@ -2,22 +2,22 @@
   "development": {
     "username": "postgres",
     "password": "postgres",
-    "database": "database_development",
+    "database": "database_development123",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
     "username": "postgres",
     "password": "postgres",
-    "database": "database_tests",
+    "database": "database_test123",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "production": {
-    "username": "postgres",
-    "password": "postgres",
+    "username": "root",
+    "password": null,
     "database": "database_production",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "mysql"
   }
 }

@@ -5,6 +5,7 @@
         <TeamCard
           v-for="team in teams"
           :key="team.id"
+          :team="team"
         />
       </div>
     </div>

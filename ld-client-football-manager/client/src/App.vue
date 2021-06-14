@@ -7,6 +7,7 @@
         :notif="notif"
         v-if="notif"
       />
+      <router-view/>
     </main>
   </div>
 </template>
@@ -24,12 +25,14 @@ export default {
     BaseNotification
   },
   data () {
-    return () {
-      buk
+    return {
+      test: []
     }
-    // notif: {
-    //   return this.$store.state.notif
-    // }
+  },
+  computed: {
+    notif () {
+      return this.$store.state.notif
+    }
   }
 }
 </script>
