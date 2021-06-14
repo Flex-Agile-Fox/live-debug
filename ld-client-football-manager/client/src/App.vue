@@ -26,9 +26,7 @@ export default {
   },
   data () {
     return {
-      notif: {
-        return: this.$store.state.notif
-      }
+      notif: this.$store.state.notif
     }
   }
 }

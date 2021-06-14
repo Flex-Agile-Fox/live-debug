@@ -22,7 +22,7 @@
       "pos": "A",
       "height": 186,
       "score": 83,
-      "teamId": 6
+      "teamId": 5
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "pos": "A",
       "height": 172,
       "score": 83,
-      "teamId": 6
+      "teamId": 1
     },
     {
       "id": 6,
@@ -46,7 +46,7 @@
       "pos": "GK",
       "height": 189,
       "score": 71,
-      "teamId": 5
+      "teamId": 4
     },
     {
       "id": 7,
