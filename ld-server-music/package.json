@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test jest --detectOpenHandles --runInBand --forceExit"
+    "test": "SET NODE_ENV=test&&jest --detectOpenHandles --runInBand --forceExit",
+    "setup:test": "SET NODE_ENV=test&&sequelize db:create && sequelize db:migrate"
   },
   "keywords": [],
   "author": "",
