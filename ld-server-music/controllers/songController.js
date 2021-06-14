@@ -17,7 +17,9 @@ class SongController {
           lyric: song.lyric
         })
       })
-      .catch(next)
+      .catch(err => {
+        next(err)
+      })
   }
 
   static delete(req, res, next) {
@@ -33,7 +35,9 @@ class SongController {
           throw createError(500, "Internal server error")
         }
       })
-      .catch(next)
+      .catch(err => {
+        next(err)
+      })
   }
 }
 

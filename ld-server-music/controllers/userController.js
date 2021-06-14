@@ -17,7 +17,9 @@ class UserController {
           email: user.email,
         });
       })
-      .catch(next);
+      .catch(err => {
+        next(err)
+      });
   }
 
   static login(req, res, next) {

@@ -15,7 +15,7 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       lyric: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(1000),
       },
       artist: {
         type: Sequelize.STRING,
