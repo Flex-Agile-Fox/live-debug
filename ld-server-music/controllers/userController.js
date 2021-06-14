@@ -6,18 +6,20 @@ const createError = require('http-errors')
 class UserController {
   static register(req, res, next) {
     const { email, password } = req.body
-
     User.create({
       email,
       password
     })
       .then(user => {
+        console.log('user')
         res.status(201).json({
           id: user.id,
           email: user.email
         })
       })
-      .catch(next)
+      .catch((err) => (
+        next(err)
+      ))
   }
 
   static login(req, res, next) {
