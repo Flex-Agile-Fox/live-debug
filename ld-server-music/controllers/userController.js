@@ -10,8 +10,8 @@ class UserController {
       email,
       password
     })
-      .then(user => {
-        console.log('user')
+      .then((user) => {
+        console.log('test')
         res.status(201).json({
           id: user.id,
           email: user.email

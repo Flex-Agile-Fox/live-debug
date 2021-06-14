@@ -31,7 +31,7 @@ export default new Vuex.Store({
   },
   actions: {
     fetchTeams ({ commit }) {
-      console.log('test')
+      // console.log('test')
       footballAPI
         .get('/teams')
         .then(({ data }) => {

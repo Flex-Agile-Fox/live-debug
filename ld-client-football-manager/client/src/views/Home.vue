@@ -23,6 +23,7 @@ export default {
     }
   },
   created () {
+    console.log('test')
     this.$store.dispatch('fetchTeams')
   }
 }
