@@ -3,30 +3,31 @@
     <Navbar />
     <main role="main">
       <Headline />
-      <BaseNotification :notif="notif" v-if="notif" />
+      <BaseNotification
+        :notif="this.$store.state.notif"
+        v-if="this.$store.state.notif"
+      />
     </main>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-import BaseNotification from "./components/BaseNotification";
-import Navbar from "./components/Navbar";
-import Headline from "./components/Headline";
+import BaseNotification from './components/BaseNotification'
+import Navbar from './components/Navbar'
+import Headline from './components/Headline'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     Navbar,
     Headline,
-    BaseNotification,
+    BaseNotification
   },
-  data() {
-    notif: {
-      return this.$store.state.notif;
-    }
-  },
-};
+  data () {
+    return {}
+  }
+}
 </script>
 
 <style>
