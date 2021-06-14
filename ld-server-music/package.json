@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test jest --detectOpenHandles --runInBand --forceExit"
+    "test": "NODE_ENV=test jest --detectOpenHandles --runInBand --forceExit",
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +18,8 @@
     "http-errors": "^1.7.3",
     "jsonwebtoken": "^8.5.1",
     "pg": "^8.0.0",
-    "sequelize": "^6.3.5"
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0"
   },
   "devDependencies": {
     "jest": "^25.2.7",

@@ -23,10 +23,13 @@ export default {
     Headline,
     BaseNotification
   },
-  data() {
-    notif: {
-      return this.$store.state.notif
+  data () {
+    return () {
+      buk
     }
+    // notif: {
+    //   return this.$store.state.notif
+    // }
   }
 }
 </script>

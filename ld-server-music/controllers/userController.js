@@ -7,30 +7,22 @@ class UserController {
   static register(req, res, next) {
     const { email, password } = req.body
 
-    User.create({
-      email,
-      password
+    User.create({ email, password })
+    .then((user) => {
+      res.status(201).json({ id: user.id, email: user.email})
+    }).catch((err) => {
+      next(err)
     })
-      .then(user => {
-        res.status(201).json({
-          id: user.id,
-          email: user.email
-        })
-      })
-      .catch(next)
   }
 
   static login(req, res, next) {
     const { email, password } = req.body
 
-    User.findOne({
-      email
-    })
-      .then(result => {
-        if (result && bcryptjs.compareSync(password, result.password)) {
-          res.status(200).json({
-            access_token: jwt.sign({ id: result.id }, "kucing")
-          })
+    User.findOne({email})
+    .then((result) => {
+      if (result && bcryptjs.compareSync(password, result.password)) {
+        const access_token = jwt.sign({id: result.id}, 'kucing')
+          res.status(200).json({access_token})
         } else {
           throw createError(400, "Invalid Email/Password")
         }
@@ -40,3 +32,5 @@ class UserController {
       })
   }
 }
+
+module.exports = UserController

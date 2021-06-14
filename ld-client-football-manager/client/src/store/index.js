@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import footballAPI from '../api'
+import footballAPI from '../api/footballApi'
 
 Vue.use(Vuex)
 
