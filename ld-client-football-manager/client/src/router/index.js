@@ -25,12 +25,12 @@ const routes = [
       {
         path: '',
         name: 'TeamDetail',
-        component: () => import('../components/TeamDetailDescription')
+        component: () => import('../components/TeamDetailDescription.vue')
       },
       {
         path: 'players',
         name: 'TeamDetailPlayers',
-        component: () => import('../components/TeamDetailPlayers')
+        component: () => import('../components/TeamDetailPlayers.vue')
       }
     ]
   }

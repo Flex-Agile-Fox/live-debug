@@ -59,7 +59,7 @@ export default {
     }
   },
   created () {
-    console.log(this.$route)
+    console.log(this.$route.params.id)
     this.$store.dispatch('fetchOneTeam', {
       id: this.$route.params.id
     })

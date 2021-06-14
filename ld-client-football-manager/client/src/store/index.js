@@ -42,7 +42,7 @@ export default new Vuex.Store({
     },
     fetchTeamPlayer (context, payload) {
       footballAPI
-        .get('/players?teamId=' + payload)
+        .get('/players?teamId=' + payload.teamId)
         .then(({ data }) => {
           context.commit('SET_TEAM_PLAYER', data)
         })

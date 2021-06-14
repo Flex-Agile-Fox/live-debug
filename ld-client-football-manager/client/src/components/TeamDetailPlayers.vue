@@ -23,7 +23,8 @@ export default {
       return this.$store.state.teamPlayer
     }
   },
-  created () {
+  mounted () {
+    console.log(this.$route.params.id)
     this.$store.dispatch('fetchTeamPlayer', {
       teamId: this.$route.params.id
     })
