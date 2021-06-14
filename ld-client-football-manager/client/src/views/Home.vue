@@ -3,8 +3,7 @@
     <div class="container">
       <div class="row">
         <TeamCard
-          v-for="team in teams"
-          :key="team.id"
+          :teams="teams"
         />
       </div>
     </div>

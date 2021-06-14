@@ -1,6 +1,6 @@
 <template>
   <div class="col-md-4">
-    <div class="card mb-4 box-shadow p-3">
+    <div v-for="team in teams" :key="team.id" class="card mb-4 box-shadow p-3">
       <img class="card-img-top img-item" :src="team.img" >
       <div class="card-body">
         <h5 class="card-title">{{ team.name }}</h5>
@@ -16,7 +16,8 @@
 
 <script>
 export default {
-  name: 'TeamCard'
+  name: 'TeamCard',
+  props: ['teams']
 }
 </script>
 

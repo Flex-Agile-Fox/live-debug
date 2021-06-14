@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import footballAPI from '../api'
+import footballAPI from '../api/footballApi.js'
 
 Vue.use(Vuex)
 
@@ -30,17 +30,19 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    fetchTeams (context) {
+    fetchTeams ({ commit }) {
+      console.log('test')
       footballAPI
         .get('/teams')
         .then(({ data }) => {
-          context.commit('SET_TEAMS', data)
+          // console.log(data)
+          commit('SET_TEAMS', data)
         })
         .catch(err => {
           console.log(err)
         })
     },
-    fetchTeamPlayer (context, payload) {
+    fetchTeamPlayer ({ context }, payload) {
       footballAPI
         .get('/players?teamId=' + payload)
         .then(({ data }) => {

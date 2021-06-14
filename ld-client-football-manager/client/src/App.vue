@@ -23,9 +23,9 @@ export default {
     Headline,
     BaseNotification
   },
-  data() {
-    notif: {
-      return this.$store.state.notif
+  data () {
+    return {
+      notif: this.$store.state.notif
     }
   }
 }

@@ -1,10 +1,10 @@
 'use strict'
 
 const bcryptjs = require("bcryptjs")
+const { Sequelize, DataTypes, Model } = require('sequelize');
 
 module.exports = (sequelize, DataTypes) => {
 
-  const { Model } = require('sequelize')
   class User extends Model { }
 
   User.init({
