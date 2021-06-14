@@ -1,6 +1,7 @@
 module.exports = function (err, req, res, next) {
-	let statusCode = 500;
-	let message = "";
+	// let statusCode = 500;
+	// let message = "Internal Server Error!";
+	// console.log(err.name, "<<<<<<<<<<<<<<<<<<");
 	switch (err.name) {
 		case "SequelizeValidationError":
 			statusCode = 400;
@@ -32,9 +33,13 @@ module.exports = function (err, req, res, next) {
 			statusCode = 401;
 			message = "Failed to authenticate";
 			break;
+		default:
+			statusCode = 500;
+			message = "Internal Server Error!";
+			break;
 	}
 
-	statusCode === 500 && console.log(err.stack);
+	// statusCode === 500 && console.log(err.stack);
 
 	res.status(statusCode).json({ message });
 };
