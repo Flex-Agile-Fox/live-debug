@@ -24,17 +24,13 @@ class SongController {
 	}
 
 	static delete(req, res, next) {
-		Song.destroy({
-			id: req.params.id,
-		})
-			.then((data) => {
-				if (data === 1) {
-					res.status(200).json({
-						message: "Success delete a Song",
-					});
-				} else {
-					throw createError(500, "Internal server error");
-				}
+		let song = req.song;
+		song
+			.destroy()
+			.then(() => {
+				res.status(200).json({
+					message: "Success delete a Song",
+				});
 			})
 			.catch((err) => next(err));
 	}

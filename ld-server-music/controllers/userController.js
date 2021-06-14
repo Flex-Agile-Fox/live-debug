@@ -29,7 +29,7 @@ class UserController {
 			email,
 		})
 			.then((result) => {
-				if (result && bcryptjs.compareSync(password, result.password)) {
+				if (result && bcryptjs.compareSync(String(password), result.password)) {
 					res.status(200).json({
 						access_token: jwt.sign({ id: result.id }, "kucing"),
 					});

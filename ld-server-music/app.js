@@ -10,8 +10,8 @@ app.use(express.json({ extended: true }));
 app.use("/", routes);
 app.use(errorHandler);
 
-// app.listen(3000, () => {
-// 	console.log(`Application run in port 3000`);
-// });
+app.listen(3000, () => {
+	console.log(`Application run in port 3000`);
+});
 
 module.exports = app;
