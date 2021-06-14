@@ -1,0 +1,112 @@
+{
+  "players": [
+    {
+      "id": 1,
+      "name": "Roberto Carlos",
+      "pos": "M",
+      "height": 168,
+      "score": 79,
+      "teamId": 6
+    },
+    {
+      "id": 2,
+      "name": "Javier Zanetti",
+      "pos": "M",
+      "height": 178,
+      "score": 82,
+      "teamId": 3
+    },
+    {
+      "id": 3,
+      "name": "Thomas Müller",
+      "pos": "A",
+      "height": 186,
+      "score": 83,
+      "teamId": 6
+    },
+    {
+      "id": 4,
+      "name": "Francesco Totti",
+      "pos": "A",
+      "height": 180,
+      "score": 80,
+      "teamId": 1
+    },
+    {
+      "id": 5,
+      "name": "Andrei Arshavin",
+      "pos": "A",
+      "height": 172,
+      "score": 83,
+      "teamId": 6
+    },
+    {
+      "id": 6,
+      "name": "Markus Millers",
+      "pos": "GK",
+      "height": 189,
+      "score": 71,
+      "teamId": 5
+    },
+    {
+      "id": 7,
+      "name": "Artur Boruc",
+      "pos": "GK",
+      "height": 193,
+      "score": 78,
+      "teamId": 1
+    },
+    {
+      "id": 8,
+      "name": "Laurent Koscielny",
+      "pos": "D",
+      "height": 185,
+      "score": 84,
+      "teamId": 1
+    }
+  ],
+  "teams": [
+    {
+      "id": 1,
+      "name": "Arsenal",
+      "img": "https://upload.wikimedia.org/wikipedia/id/thumb/5/53/Arsenal_FC.svg/1200px-Arsenal_FC.svg.png",
+      "coach": "Mikel Arteta",
+      "description": "Arsenal Football Club is a professional football club based in Islington, London, England, that plays in the Premier League, the top flight of English football."
+    },
+    {
+      "id": 2,
+      "name": "Chelsea",
+      "img": "https://upload.wikimedia.org/wikipedia/sco/thumb/c/cc/Chelsea_FC.svg/1200px-Chelsea_FC.svg.png",
+      "coach": "Di Matteo",
+      "description": "Chelsea Football Club are an English professional football club based in Fulham, London. Founded in 1905, they compete in the Premier League, the top division of English football."
+    },
+    {
+      "id": 3,
+      "name": "Manchester United",
+      "img": "https://lh3.googleusercontent.com/KNyKMfQqqVcLYAROYJ6KPW7nqmyMMcuc7npdzuzYI9KXhnZDJ3Wkfqy_apcQTDgq2QlNp9LzqQly06N5qsNxUOLT",
+      "coach": "Sir Alex Ferguson",
+      "description": "Manchester United Football Club is a professional football club based in Old Trafford, Greater Manchester, England, that competes in the Premier League, the top flight of English football."
+    },
+    {
+      "id": 4,
+      "name": "Manchester City",
+      "img": "https://upload.wikimedia.org/wikipedia/id/e/eb/Manchester_City_FC_badge.svg",
+      "coach": "Pep Guardiola",
+      "description": "Manchester City Football Club is an English football club based in Manchester that competes in the Premier League, the top flight of English football. Founded in 1880 as St. Mark's, it became Ardwick Association Football Club in 1887 and Manchester City in 1894."
+    },
+    {
+      "id": 5,
+      "name": "Wolverhampton Wanderers",
+      "img": "https://seeklogo.com/images/W/wolverhampton-wanderers-fc-logo-20C56B0ADC-seeklogo.com.png",
+      "coach": "Nuno Espírito Santo",
+      "description": "Wolverhampton Wanderers Football Club, commonly known as Wolves, is a professional association football club based in Wolverhampton, West Midlands, England."
+    },
+    {
+      "id": 6,
+      "name": "Liverpool",
+      "img": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/1200px-Liverpool_FC.svg.png",
+      "coach": "Jürgen Klopp",
+      "description": "Liverpool Football Club is a professional football club in Liverpool, England, that competes in the Premier League, the top tier of English football."
+    }
+  ]
+}
